@@ -1,20 +1,21 @@
-<div *ngIf="visible">
-  <div class="background"></div>
+<!-- Con ngcontainer evitamos que nuestro dom tenga un nodo innecesario -->
+<ng-container *ngIf="visible">
+    <div class="background"></div>
 
-  <div class="card">
+    <div class="card">
 
-    <div class="header">
-      {{title}}
+        <div class="header">
+            {{title}}
+        </div>
+
+        <div class="message">
+            {{message}}
+        </div>
+
+        <div class="footer">
+            <button (click)="dismiss()">Ok</button>
+        </div>
+
     </div>
 
-    <div class="message">
-      {{message}}
-    </div>
-
-    <div class="footer">
-      <button (click)="dismiss()">Ok</button>
-    </div>
-
-  </div>
-
-</div>
+</ng-container>

@@ -32,6 +32,10 @@ import { TimerNativeComponent } from './timer-native/timer.component';
     AppRoutingModule,
     FormsModule
   ],
+  //definimos los componentes que se definen de forma dinamica (en ejecución/desde el controlador)
+  entryComponents: [
+    SimpleAlertViewComponent
+  ],
   providers: [],
   bootstrap: [AppComponent]
 })

@@ -1,12 +1,10 @@
 <ul>
-  <li *ngFor="let tab of tabs" 
-      [ngClass]="{'active':tab.isActive}" 
-      (click)="selectTab(tab)">
-      {{tab.title}}
-  </li>
-</ul> 
+    <li *ngFor="let tab of tabs" [ngClass]="{'active':tab.isActive}" (click)="selectTab(tab)">
+        {{tab.title}}
+    </li>
+</ul>
 
 <div class="content">
-  <ng-content></ng-content>
-</div> 
-
+    <!-- Aqui desplegamos el contenido de la etiqueta/componente tab -->
+    <ng-content></ng-content>
+</div>

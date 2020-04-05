@@ -12,6 +12,7 @@ import { Subscription } from 'rxjs';
   //se pueden aplicar a toda la aplicación
   encapsulation: ViewEncapsulation.None
 })
+//COMPONENTE DE EJEMPLO
 export class TimerNoneComponent implements OnInit, OnDestroy {
 
   @Output() onComplete = new EventEmitter<void>();

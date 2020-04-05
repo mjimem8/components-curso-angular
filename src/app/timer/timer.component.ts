@@ -35,6 +35,7 @@ export class TimerComponent implements OnInit, OnDestroy {
       //con conRef optimizamos nuestra aplicaciones porque podemos cambiar
       //ChangeDetectionStrategy.ondefault a onpush y asi podemos indicar cuando queremos que se 
       //comprueba el valor get progress() y asi no se ejecuta varias veces (solo la que necesita)
+      //se puede utilizar para mas cosas (investigar)
       this.coRef.markForCheck();
     });
   }

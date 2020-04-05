@@ -13,6 +13,7 @@ import { Subscription } from 'rxjs';
   //la encapsulacion emulada o shadowdom solo afecta al componente
   encapsulation: ViewEncapsulation.ShadowDom
 })
+//COMPONENTE DE EJEMPLO
 export class TimerNativeComponent implements OnInit, OnDestroy {
 
   @Output() onComplete = new EventEmitter<void>();
